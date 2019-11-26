@@ -3,27 +3,63 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26744901B09483DD65BB6560 /* Pods_NTV_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C3E60DDFD7192E44FFE2FD /* Pods_NTV_Project.framework */; };
+		821B4FB22376CF4600F23BC8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821B4FB12376CF4600F23BC8 /* SignUpViewController.swift */; };
+		823057D92376B44F00C02810 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823057D82376B44F00C02810 /* LoginViewController.swift */; };
+		823913C3237AEEDA00CDA1F7 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823913C2237AEEDA00CDA1F7 /* News.swift */; };
+		823913C6237AF64D00CDA1F7 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823913C5237AF64D00CDA1F7 /* NewsTableViewCell.swift */; };
+		8268D391238C037B009CA335 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8268D390238C037B009CA335 /* ProfileViewController.swift */; };
+		82709B662383D51800559574 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82709B652383D51800559574 /* NewsDetailViewController.swift */; };
+		828362D42385525F003B3033 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828362D32385525F003B3033 /* ListViewController.swift */; };
+		828362D623855304003B3033 /* ListsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828362D523855304003B3033 /* ListsTableViewCell.swift */; };
+		8291F015237AC2E800DE26C2 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8291F014237AC2E800DE26C2 /* NewsViewController.swift */; };
 		82A59CF7237696DB00DE2077 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A59CF6237696DB00DE2077 /* AppDelegate.swift */; };
 		82A59CF9237696DB00DE2077 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A59CF8237696DB00DE2077 /* SceneDelegate.swift */; };
-		82A59CFB237696DB00DE2077 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A59CFA237696DB00DE2077 /* ViewController.swift */; };
+		82A59CFB237696DB00DE2077 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A59CFA237696DB00DE2077 /* OnboardingViewController.swift */; };
 		82A59CFE237696DB00DE2077 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82A59CFC237696DB00DE2077 /* Main.storyboard */; };
 		82A59D00237696DD00DE2077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A59CFF237696DD00DE2077 /* Assets.xcassets */; };
 		82A59D03237696DD00DE2077 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82A59D01237696DD00DE2077 /* LaunchScreen.storyboard */; };
+		82A59D0B2376981E00DE2077 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82A59D0A2376981E00DE2077 /* GoogleService-Info.plist */; };
+		82A756C9238C1E5400ED8FDD /* ProfileEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A756C8238C1E5400ED8FDD /* ProfileEditingViewController.swift */; };
+		82B11842237D415900CC1800 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B11841237D415900CC1800 /* Root.swift */; };
+		82FF22E3237BFCAA004CC4C9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FF22E2237BFCAA004CC4C9 /* Category.swift */; };
+		82FF22E5237BFCBA004CC4C9 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FF22E4237BFCBA004CC4C9 /* Account.swift */; };
+		82FF22E7237C0090004CC4C9 /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FF22E6237C0090004CC4C9 /* CategoriesTableViewCell.swift */; };
+		82FF22EA237C124A004CC4C9 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FF22E9237C124A004CC4C9 /* CategoriesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26F31236E098DF80FD25FEFC /* Pods-NTV Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTV Project.release.xcconfig"; path = "Target Support Files/Pods-NTV Project/Pods-NTV Project.release.xcconfig"; sourceTree = "<group>"; };
+		821B4FB12376CF4600F23BC8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		823057D82376B44F00C02810 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		823913C2237AEEDA00CDA1F7 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		823913C5237AF64D00CDA1F7 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		8268D390238C037B009CA335 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		82709B652383D51800559574 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
+		828362D32385525F003B3033 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		828362D523855304003B3033 /* ListsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsTableViewCell.swift; sourceTree = "<group>"; };
+		8291F014237AC2E800DE26C2 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		82A59CF3237696DB00DE2077 /* NTV Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NTV Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A59CF6237696DB00DE2077 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82A59CF8237696DB00DE2077 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		82A59CFA237696DB00DE2077 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		82A59CFA237696DB00DE2077 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		82A59CFD237696DB00DE2077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82A59CFF237696DD00DE2077 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82A59D02237696DD00DE2077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82A59D04237696DD00DE2077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82A59D0A2376981E00DE2077 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		82A756C8238C1E5400ED8FDD /* ProfileEditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditingViewController.swift; sourceTree = "<group>"; };
+		82B11841237D415900CC1800 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		82FF22E2237BFCAA004CC4C9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		82FF22E4237BFCBA004CC4C9 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		82FF22E6237C0090004CC4C9 /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCell.swift; sourceTree = "<group>"; };
+		82FF22E9237C124A004CC4C9 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		B8A53EEE326CD85968DFCC0E /* Pods-NTV Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTV Project.debug.xcconfig"; path = "Target Support Files/Pods-NTV Project/Pods-NTV Project.debug.xcconfig"; sourceTree = "<group>"; };
+		E6C3E60DDFD7192E44FFE2FD /* Pods_NTV_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NTV_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +67,77 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26744901B09483DD65BB6560 /* Pods_NTV_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		823913C0237AD9DE00CDA1F7 /* AuthenticationScenes */ = {
+			isa = PBXGroup;
+			children = (
+				82A59CFA237696DB00DE2077 /* OnboardingViewController.swift */,
+				823057D82376B44F00C02810 /* LoginViewController.swift */,
+				821B4FB12376CF4600F23BC8 /* SignUpViewController.swift */,
+			);
+			path = AuthenticationScenes;
+			sourceTree = "<group>";
+		};
+		823913C1237ADA0200CDA1F7 /* NewsAllScenes */ = {
+			isa = PBXGroup;
+			children = (
+				8291F014237AC2E800DE26C2 /* NewsViewController.swift */,
+				82709B652383D51800559574 /* NewsDetailViewController.swift */,
+			);
+			path = NewsAllScenes;
+			sourceTree = "<group>";
+		};
+		823913C4237AF0D400CDA1F7 /* CellStructures */ = {
+			isa = PBXGroup;
+			children = (
+				823913C5237AF64D00CDA1F7 /* NewsTableViewCell.swift */,
+				82FF22E6237C0090004CC4C9 /* CategoriesTableViewCell.swift */,
+				828362D523855304003B3033 /* ListsTableViewCell.swift */,
+			);
+			path = CellStructures;
+			sourceTree = "<group>";
+		};
+		8268D392238C0383009CA335 /* ProfileScenes */ = {
+			isa = PBXGroup;
+			children = (
+				8268D390238C037B009CA335 /* ProfileViewController.swift */,
+				82A756C8238C1E5400ED8FDD /* ProfileEditingViewController.swift */,
+			);
+			path = ProfileScenes;
+			sourceTree = "<group>";
+		};
+		8272A1D52376D8E500AB09ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				823913C2237AEEDA00CDA1F7 /* News.swift */,
+				82FF22E2237BFCAA004CC4C9 /* Category.swift */,
+				82FF22E4237BFCBA004CC4C9 /* Account.swift */,
+				82B11841237D415900CC1800 /* Root.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		828362D22385522D003B3033 /* ListScenes */ = {
+			isa = PBXGroup;
+			children = (
+				828362D32385525F003B3033 /* ListViewController.swift */,
+			);
+			path = ListScenes;
+			sourceTree = "<group>";
+		};
 		82A59CEA237696DB00DE2077 = {
 			isa = PBXGroup;
 			children = (
 				82A59CF5237696DB00DE2077 /* NTV Project */,
 				82A59CF4237696DB00DE2077 /* Products */,
+				BFD2547CB6A5C951BC450D8D /* Pods */,
+				A893CD925D44D618A465041B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +152,63 @@
 		82A59CF5237696DB00DE2077 /* NTV Project */ = {
 			isa = PBXGroup;
 			children = (
+				823913C4237AF0D400CDA1F7 /* CellStructures */,
+				8272A1D52376D8E500AB09ED /* Models */,
+				82B297AA2376CC5C009F5CA6 /* ViewControllers */,
 				82A59CF6237696DB00DE2077 /* AppDelegate.swift */,
 				82A59CF8237696DB00DE2077 /* SceneDelegate.swift */,
-				82A59CFA237696DB00DE2077 /* ViewController.swift */,
-				82A59CFC237696DB00DE2077 /* Main.storyboard */,
+				82B297AB2376CCA2009F5CA6 /* Storyboards */,
 				82A59CFF237696DD00DE2077 /* Assets.xcassets */,
-				82A59D01237696DD00DE2077 /* LaunchScreen.storyboard */,
 				82A59D04237696DD00DE2077 /* Info.plist */,
+				82A59D0A2376981E00DE2077 /* GoogleService-Info.plist */,
 			);
 			path = "NTV Project";
+			sourceTree = "<group>";
+		};
+		82B297AA2376CC5C009F5CA6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8268D392238C0383009CA335 /* ProfileScenes */,
+				828362D22385522D003B3033 /* ListScenes */,
+				82FF22E8237C1222004CC4C9 /* CategoriesScene */,
+				823913C0237AD9DE00CDA1F7 /* AuthenticationScenes */,
+				823913C1237ADA0200CDA1F7 /* NewsAllScenes */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		82B297AB2376CCA2009F5CA6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				82A59CFC237696DB00DE2077 /* Main.storyboard */,
+				82A59D01237696DD00DE2077 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		82FF22E8237C1222004CC4C9 /* CategoriesScene */ = {
+			isa = PBXGroup;
+			children = (
+				82FF22E9237C124A004CC4C9 /* CategoriesViewController.swift */,
+			);
+			path = CategoriesScene;
+			sourceTree = "<group>";
+		};
+		A893CD925D44D618A465041B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6C3E60DDFD7192E44FFE2FD /* Pods_NTV_Project.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFD2547CB6A5C951BC450D8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8A53EEE326CD85968DFCC0E /* Pods-NTV Project.debug.xcconfig */,
+				26F31236E098DF80FD25FEFC /* Pods-NTV Project.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82A59D07237696DD00DE2077 /* Build configuration list for PBXNativeTarget "NTV Project" */;
 			buildPhases = (
+				44FF50771EF809B169170AD2 /* [CP] Check Pods Manifest.lock */,
 				82A59CEF237696DB00DE2077 /* Sources */,
 				82A59CF0237696DB00DE2077 /* Frameworks */,
 				82A59CF1237696DB00DE2077 /* Resources */,
+				4BEC2921372CBF132C68B2EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,19 +274,77 @@
 				82A59D03237696DD00DE2077 /* LaunchScreen.storyboard in Resources */,
 				82A59D00237696DD00DE2077 /* Assets.xcassets in Resources */,
 				82A59CFE237696DB00DE2077 /* Main.storyboard in Resources */,
+				82A59D0B2376981E00DE2077 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44FF50771EF809B169170AD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NTV Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BEC2921372CBF132C68B2EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NTV Project/Pods-NTV Project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NTV Project/Pods-NTV Project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NTV Project/Pods-NTV Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		82A59CEF237696DB00DE2077 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82A59CFB237696DB00DE2077 /* ViewController.swift in Sources */,
+				823057D92376B44F00C02810 /* LoginViewController.swift in Sources */,
+				82A756C9238C1E5400ED8FDD /* ProfileEditingViewController.swift in Sources */,
+				828362D623855304003B3033 /* ListsTableViewCell.swift in Sources */,
+				82A59CFB237696DB00DE2077 /* OnboardingViewController.swift in Sources */,
+				82B11842237D415900CC1800 /* Root.swift in Sources */,
+				82FF22EA237C124A004CC4C9 /* CategoriesViewController.swift in Sources */,
+				8268D391238C037B009CA335 /* ProfileViewController.swift in Sources */,
+				82FF22E7237C0090004CC4C9 /* CategoriesTableViewCell.swift in Sources */,
+				823913C6237AF64D00CDA1F7 /* NewsTableViewCell.swift in Sources */,
 				82A59CF7237696DB00DE2077 /* AppDelegate.swift in Sources */,
+				8291F015237AC2E800DE26C2 /* NewsViewController.swift in Sources */,
+				828362D42385525F003B3033 /* ListViewController.swift in Sources */,
+				82FF22E5237BFCBA004CC4C9 /* Account.swift in Sources */,
+				82FF22E3237BFCAA004CC4C9 /* Category.swift in Sources */,
+				823913C3237AEEDA00CDA1F7 /* News.swift in Sources */,
 				82A59CF9237696DB00DE2077 /* SceneDelegate.swift in Sources */,
+				82709B662383D51800559574 /* NewsDetailViewController.swift in Sources */,
+				821B4FB22376CF4600F23BC8 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +486,13 @@
 		};
 		82A59D08237696DD00DE2077 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8A53EEE326CD85968DFCC0E /* Pods-NTV Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XSQ8BQ5W8Z;
 				INFOPLIST_FILE = "NTV Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,17 +500,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Oktay-Kurt.NTV-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		82A59D09237696DD00DE2077 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26F31236E098DF80FD25FEFC /* Pods-NTV Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XSQ8BQ5W8Z;
 				INFOPLIST_FILE = "NTV Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +520,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Oktay-Kurt.NTV-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
