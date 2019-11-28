@@ -31,14 +31,15 @@ class ProfileEditingViewController: UIViewController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let actionCancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         let actionSignOut = UIAlertAction(title: "Çıkış Yap", style: .default) { (UIAlertAction) in
-            let firebaseAuth = Auth.auth()
             do {
-                if firebaseAuth.currentUser != nil {
-                    try firebaseAuth.signOut()
+                if Auth.auth().currentUser != nil {
+                    try Auth.auth().signOut()
                     if let storyboard = self.storyboard {
                         let vc = storyboard.instantiateViewController(withIdentifier: "firstNavigationController") as! UINavigationController
                         self.present(vc, animated: false, completion: nil)
                     }
+                } else {
+                    print("Giriş yokki çıkalım")
                 }
             } catch let signOutError as NSError {
                 print ("Error signing out: \(signOutError)")

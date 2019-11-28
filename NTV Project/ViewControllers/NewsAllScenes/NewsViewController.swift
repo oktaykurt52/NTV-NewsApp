@@ -21,6 +21,7 @@ class NewsViewController: UIViewController {
     var newImage: String?
     var url: String?
     var news = [Item]()
+    let storage = UserDefaults.standard
     
     
     // MARK: - Life Cycle
@@ -50,6 +51,16 @@ class NewsViewController: UIViewController {
                         DispatchQueue.main.async {
                             self.newsTableView.reloadData()
                             self.newCountLabel.text = "\(self.news.count) adet haber listeleniyor."
+                        }
+                        
+                        let encoder = JSONEncoder()
+                        do {
+                            
+                            let contactData = try encoder.encode(root)
+                            self.storage.setValue(contactData, forKey: "thumbnail")
+                            
+                        } catch {
+                            print(error)
                         }
                         
                     } catch {

@@ -77,6 +77,7 @@ class NewsDetailViewController: UIViewController {
         let item = new
         readNews.append(item!)
         print(readNews)
+        showAlert()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
