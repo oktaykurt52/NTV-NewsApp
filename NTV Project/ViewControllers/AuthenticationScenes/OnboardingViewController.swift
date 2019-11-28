@@ -21,12 +21,14 @@ class OnboardingViewController: UIViewController {
         super.viewDidLoad()
         
         
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         authHandler = Auth.auth().addStateDidChangeListener({ (auth, user) in
             if Auth.auth().currentUser != nil {
                 // User is signed in.
+                self.isLoggedIn = true
                 // ...
             } else {
                 // No user is signed in.
@@ -46,10 +48,11 @@ class OnboardingViewController: UIViewController {
     // MARK: - Functions
     
     // MARK: - Actions
+    // Going to Login scene;
     @IBAction func girisButtonTapped(_ sender: UIButton) {
         performSegue(withIdentifier: "GoToLoginScene", sender: nil)
     }
-    
+    // Going to SignUp scene;
     @IBAction func üyeolButtonTapped(_ sender: UIButton) {
         performSegue(withIdentifier: "goToSignUpScene", sender: nil)
     }

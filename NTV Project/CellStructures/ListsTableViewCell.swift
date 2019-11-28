@@ -9,7 +9,6 @@
 import UIKit
 
 class ListsTableViewCell: UITableViewCell {
-    @IBOutlet weak var listName: UILabel!
-    @IBOutlet weak var listCount: UILabel!
+    @IBOutlet weak var listNameLabel: UILabel!
     
 }

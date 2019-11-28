@@ -35,6 +35,10 @@ class NewsViewController: UIViewController {
     }
     
     // MARK: - Functions
+    override func viewWillAppear(_ animated: Bool) {
+        self.newsTableView.rowHeight = 100
+    }
+    
     func getNewFromRss (url: String) {
         if let rssUrl = URL(string: url) {
             URLSession.shared.dataTask(with: rssUrl) { (data, response, error) in
@@ -163,22 +167,18 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let new = news[indexPath.row]
-        newTitle = new.title
-        newDescription = new.description
-        newImage = new.thumbnail
-        newLink = new.link
-        performSegue(withIdentifier: "GoToNewDetails", sender: nil)
+        performSegue(withIdentifier: "GoToNewDetails", sender: new)
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "GoToNewDetails" {
-            if let destination = segue.destination as? NewsDetailViewController {
-                destination.newTitle = newTitle
-                destination.newDescription = newDescription
-                destination.newImage = newImage
-                destination.newLink = newLink
+            if let destination = segue.destination as? NewsDetailViewController, let indexPath = self.newsTableView.indexPathForSelectedRow {
+                let new = news[indexPath.row]
+                destination.new = new
+                
             }
+            
         }
         
     }

@@ -18,23 +18,34 @@ class NewsDetailViewController: UIViewController {
     
     
     // MARK: - Stored Properties
-    var newTitle: String?
-    var newDescription: String?
-    var newImage: String?
-    var newLink: String?
-    
+    var new: Item!
+    var readNews = [Item]()
     
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        newImageView.image = getImageFromUrl(url: newImage!)
-        newTitleLabel.text = newTitle
-        newDescriptionLabel.text = newDescription
+        newImageView.image = getImageFromUrl(url: new.thumbnail!)
+        newTitleLabel.text = new.title
+        newDescriptionLabel.text = new.description
+        
     }
     
     // MARK: - Functions
+    func showAlert() {
+        let title = "Haber 'okunan haberler' listesine eklendi"
+        let message = "Gezinmeye devam et"
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Devam et", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func addToListButtonTapped(_ sender: UIButton) {
+        
+    }
     
     
     func getImageFromUrl(url: String) -> UIImage? {
@@ -57,8 +68,20 @@ class NewsDetailViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func goToNewsSelf (_ sender: UIButton) {
-        let url = URL(string: newLink!)
+        let url = URL(string: new.link!)
         let controller = SFSafariViewController(url: url!)
         present(controller, animated: true, completion: nil)
+    }
+    
+    @IBAction func markAsReadButtonTapped(_ sender: UIButton) {
+        let item = new
+        readNews.append(item!)
+        print(readNews)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ProfileViewController  {
+            destination.readNews = readNews
+        }
     }
 }

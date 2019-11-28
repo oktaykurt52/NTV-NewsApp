@@ -13,7 +13,8 @@ class ListViewController: UIViewController {
     @IBOutlet weak var listTableView: UITableView!
     
     // MARK: - Stored Properties
-    var list = ["Favoriler","Apple Haberleri","Hafta Sonu"]
+    var list = [String]()
+    var listName: String?
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -24,6 +25,10 @@ class ListViewController: UIViewController {
     }
     
     // MARK: - Functions
+    override func viewWillAppear(_ animated: Bool) {
+        self.listTableView.rowHeight = 100
+    }
+    
     func showAlert() {
         let alert = UIAlertController(title: "Yeni oluşturacağınız listeye bir isim verin", message: nil, preferredStyle: .alert)
         alert.addTextField { (textfield) in
@@ -31,7 +36,8 @@ class ListViewController: UIViewController {
         }
         let action1 = UIAlertAction(title: "Oluştur", style: .default) { (UIAlertAction) in
             let textfield = alert.textFields![0] as UITextField
-            
+            self.listName = textfield.text
+            self.list.append(self.listName!)
         }
         let action2 = UIAlertAction(title: "Vazgeç", style: .cancel, handler: nil)
         alert.addAction(action1)
@@ -42,6 +48,7 @@ class ListViewController: UIViewController {
     // MARK: - Actions
     @IBAction func yeniListeEkleButtonTapped(_ sender: UIBarButtonItem) {
         showAlert()
+        
     }
     
 }
@@ -53,7 +60,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "ListsCell") as? ListsTableViewCell {
-            cell.listName.text = list[indexPath.row]
+            cell.listNameLabel.text = list[indexPath.row]
             return cell
         }
         
