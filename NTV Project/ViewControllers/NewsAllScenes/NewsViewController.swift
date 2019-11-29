@@ -15,10 +15,6 @@ class NewsViewController: UIViewController {
     @IBOutlet weak var newsTableView: UITableView!
     
     // MARK: - Stored Properties
-    var newLink: String?
-    var newTitle: String?
-    var newDescription: String?
-    var newImage: String?
     var url: String?
     var news = [Item]()
     let storage = UserDefaults.standard
@@ -48,6 +44,7 @@ class NewsViewController: UIViewController {
                     do {
                         let root = try decoder.decode(Root.self, from: receivedData)
                         self.news = root.items!
+                        
                         DispatchQueue.main.async {
                             self.newsTableView.reloadData()
                             self.newCountLabel.text = "\(self.news.count) adet haber listeleniyor."

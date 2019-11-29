@@ -10,5 +10,4 @@ import UIKit
 
 class ListsTableViewCell: UITableViewCell {
     @IBOutlet weak var listNameLabel: UILabel!
-    
 }

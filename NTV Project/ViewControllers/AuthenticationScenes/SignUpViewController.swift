@@ -52,7 +52,7 @@ class SignUpViewController: UIViewController {
         Auth.auth().createUser(withEmail: email, password: password) { (result, error)
             in
             if error == nil && result?.user != nil {
-                // Success attempt on Signup attempt
+                // Success on Signup attempt
                 let title = "Kayıt işlemi başarılı bir şekilde gerçekleşmiştir."
                 let message = "Haberlerde gezinmeye başlayabilirsiniz."
                 let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -63,7 +63,7 @@ class SignUpViewController: UIViewController {
                 alert.addAction(action1)
                 self.present(alert, animated: true, completion: nil)
             } else {
-                // Failure on Signup activity
+                // Failure on Signup attempt
                 // We use 'switch' statement for error cases in order to understand to current issue on failure
                 switch (error! as NSError).code {
                 case 17007:
@@ -74,10 +74,10 @@ class SignUpViewController: UIViewController {
                 case 17026:
                     // issue: Minimum character of password
                     // Alert;
-                    self.showAlert(title: "Hatalı Şifre", message: "Şifrenizin en az 6 karakterden oluştuğuna emin olun.")
+                    self.showAlert(title: "Yetersiz şifre karakter sayısı", message: "Şifrenizin en az 6 karakterden oluştuğuna emin olun.")
                     
                 case 17008:
-                    // issue: Wrong format of e-mail adress
+                    // issue: Invalid of e-mail adress
                     // Alert;
                     self.showAlert(title: "Hatalı E-posta Adresi", message: "E-posta adresinizin doğru formatta olduğundan emin olun.")
                     

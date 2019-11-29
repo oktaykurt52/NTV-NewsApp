@@ -24,9 +24,21 @@ class ProfileEditingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
     }
     
     // MARK: - Functions
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "GoBackToProfileViewController" {
+            let destination = segue.destination as! ProfileViewController
+            destination.userName = userNameTextField.text!
+            destination.userLastName = userLastNameTextField.text!
+            destination.userInterests = userInterestsTextField.text!
+            destination.userImage = profileImageView.image
+            
+        }
+    }
+    
     func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let actionCancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
@@ -70,18 +82,23 @@ class ProfileEditingViewController: UIViewController {
     
     
     // MARK: - Actions
-    @IBAction func takePhotoFromLibrary(_ sender: UITapGestureRecognizer) {
+    @IBAction func takePhotoFromLibrary(_ sender: UIButton) {
         let imagepicker = createImagePickerController(sourceType: .photoLibrary)
         present(imagepicker, animated: true, completion: nil)
     }
-    
-    @IBAction func saveEditedProfileButtonTapped(_ sender: UIButton) {
+    @IBAction func saveProfileButtonTapped(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Profil Güncelleme", message: "Profil bilgileriniz başarı ile güncellenmiştir", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Profil sayfasına dön", style: .cancel) { (UIAlertAction) in
+            self.performSegue(withIdentifier: "GoBackToProfileViewController", sender: nil)
+        }
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
         
     }
     
+    
     @IBAction func logOutButtonTapped(_ sender: UIButton) {
-        showAlert(title: "Çıkış yapmak üzeresiniz", message: "Eminmisin?")
-        
+        showAlert(title: "Çıkış yapmak üzeresiniz", message: "Eminmisiniz?")
     }
     
     
@@ -89,15 +106,17 @@ class ProfileEditingViewController: UIViewController {
 
 extension ProfileEditingViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        // info, fotoğraf seçme işlemi hakkında detaylı bilgi verir.
-        // 'UIImagePickerController.InfoKey' kullanılarak objenin tüm değerlerine ulaşılır.
+        // info, details about photo picking
+        // 'UIImagePickerController.InfoKey' to reach all values
         let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage
         
-        // 'imageView' arayüz elamanının 'image' özelliği, seçilen görsel ile güncellenir.
+        // 'imageView' update of the UI image view with the selected image from UIImagePicker
         profileImageView.image = image
         
-        // Tüm işlem tamamlandıktan sonra aktif olan 'UIImagePickerController' sayfası kapatılır.
+        // Dismiss of the view after all actions completed.
         dismiss(animated: true, completion: nil)
     }
+    
+    
     
 }

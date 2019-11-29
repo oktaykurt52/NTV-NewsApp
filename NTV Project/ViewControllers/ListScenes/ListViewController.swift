@@ -21,7 +21,6 @@ class ListViewController: UIViewController {
         super.viewDidLoad()
         
         
-        
     }
     
     // MARK: - Functions
@@ -38,6 +37,9 @@ class ListViewController: UIViewController {
             let textfield = alert.textFields![0] as UITextField
             self.listName = textfield.text
             self.list.append(self.listName!)
+            DispatchQueue.main.async {
+                self.listTableView.reloadData()
+            }
         }
         let action2 = UIAlertAction(title: "Vazgeç", style: .cancel, handler: nil)
         alert.addAction(action1)

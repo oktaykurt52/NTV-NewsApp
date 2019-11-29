@@ -43,10 +43,6 @@ class NewsDetailViewController: UIViewController {
         
     }
     
-    @IBAction func addToListButtonTapped(_ sender: UIButton) {
-        
-    }
-    
     
     func getImageFromUrl(url: String) -> UIImage? {
         let url = URL(string: url)
@@ -76,13 +72,7 @@ class NewsDetailViewController: UIViewController {
     @IBAction func markAsReadButtonTapped(_ sender: UIButton) {
         let item = new
         readNews.append(item!)
-        print(readNews)
         showAlert()
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destination as? ProfileViewController  {
-            destination.readNews = readNews
-        }
-    }
 }

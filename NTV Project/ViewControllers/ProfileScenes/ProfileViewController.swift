@@ -18,6 +18,10 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var readNewsTableView: UITableView!
     
     // MARK: - Stored Properties
+    var userName = ""
+    var userLastName = ""
+    var userInterests =  ""
+    var userImage: UIImage!
     var ref = Database.database().reference()
     var readNews = [Item]()
     var account: Account?
@@ -26,10 +30,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DispatchQueue.main.async {
-            self.readNewsTableView.reloadData()
-            
-        }
+        
         
     }
     
@@ -53,12 +54,11 @@ class ProfileViewController: UIViewController {
     
     
     // MARK: - Actions
-    @IBAction func unwindSegueFromProfileEditingScene(_ sender: UIStoryboardSegue) {
-            if let source = sender.source as? ProfileEditingViewController {
-                source.profileImageView.image = profileImageView.image
-                source.userInterestsTextField.text = userInterestsLabel.text
-            
-        }
+    @IBAction func unwindSegueFromProfileEditingViewController(_ sender: UIStoryboardSegue) {
+        let fullname = (userName + " " + userLastName)
+        userNameLabel.text = fullname
+        userInterestsLabel.text = userInterests
+        profileImageView.image = userImage
     }
     
 }
@@ -74,6 +74,10 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
             cell.newDateLabel.text = news.pubDate
             let imageUrl = news.thumbnail
             cell.newImageView.image = getImageFromUrl(url: imageUrl!)
+            DispatchQueue.main.async {
+                self.readNewsTableView.reloadData()
+                
+            }
             return cell
         }
         
