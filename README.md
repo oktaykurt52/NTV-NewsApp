@@ -1,3 +1,3 @@
 # NTV-NewsApp
 
-![](oktay-kurt-ntv-haber-app.jpeg)
+![](oktay-kurt-ntv-haber-app.jpg)
