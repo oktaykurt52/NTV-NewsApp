@@ -9,9 +9,9 @@
 This application developed with Firebase services so;
 In order to use the application, you need to login first and then you are free to 
 
-# Usage in Turkish:
+# Kullanım:
 Bu uygulama Firebase hizmetleri ile geliştirilmiştir ve;
 Uygulamaya giriş yapabilmek için önce login olmanız gerekmektedir.
 
-# Author:
+# Author / Yazar:
 Oktay Kurt, kurt21380@gmail.com
