@@ -8,7 +8,7 @@ Application that gets the latest news from a specific APİ
 # Türkçe kullanım
 Belirli bir APİ'den güncel NTV haberlerini alan ve gösteren bir uygulama
 
-# Usage in English
+# Usage
 This application developed with Firebase services so;
 In order to use the application, you need to login first and then you are free to 
 
